@@ -1,0 +1,36 @@
+.slideshow{
+    animation:slide 7s infinite;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.slideshow div{
+    height: 200px;
+    width:10px;
+    flex-basis: 100%;
+    font-family: poppins;
+}
+.slideshow div h1{
+    color:yellow;
+}
+.slideshow div h2{
+    color:white
+}
+.s1{
+    text-align: center;
+}
+.s2{
+    text-align: center;
+}
+    @keyframes slide {
+        0% { background-image: url('../../assest//Images//Heritage1.webp'); }
+        20% { background-image: url('../../assest//Images//Heritage2.webp'); }
+        40% { background-image: url('../../assest/Images/Heritage3.webp'); }
+        60% { background-image: url('../../assest//Images//Heritage4.webp'); }
+        80% { background-image: url('../../assest//Images/Toytrain.webp'); } 
+        100% { background-image: url('../../assest//Images//Heritage4.webp'); }
+    }

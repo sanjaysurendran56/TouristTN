@@ -1,0 +1,42 @@
+.inspire{
+    background-image: url('../../assest/Images/lastimage.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+     width: 100%;
+    min-height: 100vh;
+}
+.inspire h1{
+    color: white;
+    font-family: poppins;
+    font-weight: bold;
+}
+.inspire h2{
+    color: white;
+    font-family: sans-serif;
+}
+.inspire p{
+    color: white;
+}
+.quotes{
+    width: 700px;
+}
+.alex img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: white;
+    border-style: dotted;
+}
+@media(max-width:420px){
+    .quotes{
+        width: 300px;
+    }
+}
+    @media(max-width:760px){
+        .quotes{
+            width: 300px;
+        } 
+
+    }
+  

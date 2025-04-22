@@ -1,0 +1,26 @@
+.trail h1{
+    font-family: poppins;
+    font-weight: bold;
+}
+.trailtips{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 30px;
+}
+.trailtips div{
+    height: 200px;
+    width: 250px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style:solid;
+    flex-basis: 20%;
+    flex-grow: 2;
+   
+}
+@media(max-width:420px){
+    .trailtips div{
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+.Blogs h1{
+    color:white;
+    font-family:poppins;
+    font-weight: bold;
+}
+.tt{
+    background-color:darkmagenta;
+}
+.treklevel{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-evenly;
+    background-color:darkmagenta;
+}
+.levels{
+    border-width: 5px;
+    border-color: white;
+    border-style:solid;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+    color:white;
+    cursor: pointer;  
+}
+.levels:hover{
+    transform: translateY(-12px);
+     transition: 6ms ease-out;
+}
+@media(max-width:480px){
+    .levels{
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,45 @@
+
+.tenhills{
+   
+    position: relative;
+}
+.tenhills img{
+    object-fit: cover;
+    width: 100%;
+}
+ .tenhille{
+    position: absolute;
+    top:50%;
+    right:50%;
+    color:white;
+}
+#hilltn{
+  color:#f8f9fa;
+  font-family: Outfit;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: xx-large;
+}
+.iconhill{
+    color:yellow;
+}
+.populartn{
+    object-fit: cover;
+    width:  287px;
+    height: 180px;
+}
+.flexcontainerforpop{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+}
+.flexcontainerforpop div{
+    flex-basis: 25%;
+    flex-grow: 2;
+}
+@media(max-width:420px){
+    .flexcontainerforpop div{
+        flex-basis:100%;
+    }
+}

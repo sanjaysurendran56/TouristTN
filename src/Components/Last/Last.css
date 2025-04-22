@@ -1,0 +1,57 @@
+.lastone{
+    margin: 50px;
+}
+   
+.lastone h1{
+    font-family: poppins;
+    color: white;
+}
+.lastflex{
+    display: flex;
+    justify-content: space-around;
+}
+.last{
+    background-image: url('../../assest//Images/s2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.lasttwo{
+    width: 700px;
+    color: white;
+    padding-top: 200px;
+}
+hr{
+    height: 2px;
+    background-color:white;
+}
+.copyright{
+    margin-top: 200px;
+    color: white;
+}
+@media(max-width:420px){
+    .lasttwo{
+        width: 300px;
+    }
+    .copyright{
+        margin-top: 0px;
+    }
+    .last{
+        background-image: url('../../assest//Images//subscribe.webp');
+    }
+    .lastone h1{
+        font-family: poppins;
+        color:black;
+    }
+}
+    @media(max-width:760px){
+        .lasttwo{
+            width: 300px;
+        } 
+        .copyright{
+            margin-top: 0px;
+          
+        }
+        
+    }
+  

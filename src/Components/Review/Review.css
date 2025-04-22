@@ -1,0 +1,42 @@
+
+.reviewone {
+    background-color: lightgrey;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    font-family: poppins;
+}
+.reviewone img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.reviewone div{
+    box-shadow: 0 0 2px darkblue;
+    width: 150px;
+    height: 150px;
+    flex-grow: 1;
+    border-bottom-color: darkmagenta;
+    border-bottom-width: 3px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-style: solid;
+    display: flex;
+    justify-content:center;
+   flex-direction: column;
+   color:black;
+    padding: 30px;
+}
+.reviewone div h1{
+    color: darkmagenta;
+}
+@media (max-width: 480px){
+    .reviewone img{
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+
+  }

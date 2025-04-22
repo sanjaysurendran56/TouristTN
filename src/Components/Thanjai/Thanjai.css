@@ -1,0 +1,19 @@
+.backtnj{
+    background-image: url('../../assest//Images//Tnjtemple.webp');
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    object-fit: cover;
+}
+@media(max-width:420px){
+    .backtnj{
+        background-image: url('../../assest//Images//thnj2.webp');
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+    }
+    .backtnj h1{
+        color:yellow;
+        padding-top: 200px;
+    }
+}

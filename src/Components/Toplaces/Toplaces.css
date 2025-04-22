@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+.top h2{
+   
+    color: black;
+    font-family:poppins;
+    font-weight: bold;
+}
+.top h4{
+  font-family: Winky Sans;
+}
+.flexcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 30px;
+  padding: 30px;
+}
+.flexcontainer div{
+  flex-wrap: wrap;
+  flex-basis: 33.3%;
+   text-align: center;
+}
+.flexcontainer div h1{
+  font-family: poppins;
+  font-size: 100%;
+}
+.carde{
+  position: relative;
+  overflow: hidden;
+}
+.carde img{
+  width:300px;
+  height:300px;
+  object-fit: cover;
+}
+.contents{
+  height:100%;
+  width:100%;
+  top: 0;
+  right:-100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: 2s;
+}
+.carde:hover .contents{
+  right:0;
+}
+.buttonsbest{
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@media (max-width: 480px){
+  .flexcontainer div{
+    flex-wrap: wrap;
+    flex-basis:100%;
+     text-align: center;
+  }
+}
