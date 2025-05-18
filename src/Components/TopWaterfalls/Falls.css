@@ -1,0 +1,36 @@
+.hokeback{
+    background-image: url("../../assest//Images//hokenakal.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+.kutback{
+     background-image: url("../../assest//Images//fallss.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+
+}
+.pykback{
+    background-image: url("../../assest//Images//pykara.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+@media(max-width:420px){
+    .hokeback,.kutback,.pykback{
+        height: 200px;
+    }
+}

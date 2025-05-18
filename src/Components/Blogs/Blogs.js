@@ -5,7 +5,12 @@ import image1 from '../../assest/Images/EasyTrek.png'
 import image2 from '../../assest/Images/mod.png'
 import image3 from '../../assest/Images/tough.png'
 import { MdArrowOutward } from "react-icons/md";
+import { useNavigate } from 'react-router'
 const Blogs = () => {
+  const navi=useNavigate();
+  const Trek=()=>{
+    navi('/TrekTn')
+  }
  const images=[{srbc:image1 ,name:"Easy",name1:"10 Trails"},{srbc:image2,name:"Moderate" ,name1:"12 Trails"},{srbc:image3,name:"Tough",name1:"6 Trails"}]
   const Blo=()=>{
     return(
@@ -28,13 +33,12 @@ const Blogs = () => {
                   <img src={paramater.srbc}></img>
                   <br></br>
                   <br></br>
-                  <h2>{paramater.name}<MdArrowOutward /></h2>
+                  <h2 onClick={()=>Trek()}>{paramater.name}<MdArrowOutward /></h2>
                   <br></br>
                   <h4>{paramater.name1}</h4>
                   </center>
                 </div>
                
-              
                 </>
             )
           })

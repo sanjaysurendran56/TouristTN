@@ -1,0 +1,45 @@
+.logone{
+    background-image: url('../../assest//Images//logback2.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logtwo{
+border-width: 1px;
+border-color: white;
+border-style: solid;
+border-top-right-radius: 30px;
+border-bottom-left-radius: 30px;
+width:max-content;
+height:max-content;
+text-align: center;
+padding: 20px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+backdrop-filter: blur(30px);
+}
+.logtwo span{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.logone input{
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    outline: none;
+    outline: none;
+    border-color: rgba(255, 255, 255, .2);
+    padding: 10px;
+    font-size: 16px;
+}
+.linklog{
+    color: white;
+}

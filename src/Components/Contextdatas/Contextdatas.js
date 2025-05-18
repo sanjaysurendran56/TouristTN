@@ -5,11 +5,22 @@ import Container from 'react-bootstrap/Container';
 import { useState } from 'react';
 import Subscribe from '../Subscribe/Subscribe';
 import Last from '../Last/Last';
+import { useNavigate } from 'react-router';
 export const A = () => {
     const [line, upadteline] = useState("None");
+    const navi=useNavigate();
+    const vir=()=>{
+      navi('/Virtual')
+    }
+    const addrev=()=>{
+      navi('/Review')
+    }
+    const Home=()=>{
+      navi('/')
+    }
     return(
 <>
-<Navbar expand="lg" className="bg-body-tertiary mb-3" id="top">
+ <Navbar expand="lg" className="bg-body-tertiary mb-3" id="top">
         <Container fluid>
           <Navbar.Brand href="#" id='name'>Explore TamilNadu</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
@@ -25,15 +36,14 @@ export const A = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-5" id='ones'>
-              <li  onClick={() => upadteline("Home")} className={line === "Home" ? "navact" : ""}>Home</li>
+                <li  onClick={() => {upadteline("Home");Home();}}className={line === "Home" ? "navact" : ""}>Home</li>
                 <br></br>
-                <li  onClick={() => upadteline("Destination")} className={line === "Destination" ? "navact" : ""}>Destination</li>
+               
+                <li  onClick={() => {upadteline("About Us");vir();}}
+ className={line === "About Us" ? "navact" : ""}>Virtual Tour</li>
                 <br></br>
-                <li  onClick={() => upadteline("About Us")} className={line === "About Us" ? "navact" : ""}>Virtual Tour</li>
+                <li  onClick={() => {upadteline("Virtual");addrev()}} className={line === "Virtual" ? "navact" : ""}>Add Review</li>
                 <br></br>
-                <li  onClick={() => upadteline("Virtual")} className={line === "Virtual" ? "navact" : ""}>Add Review</li>
-                <br></br>
-                <li  onClick={() => upadteline("Contact")} className={line === "Contact" ? "navact" : ""}>Get Weather</li>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
@@ -47,8 +57,7 @@ export const A = () => {
 <>
 <Subscribe />
 <Last />
-</>
-    )
-    
+</>)
   };
+  
   

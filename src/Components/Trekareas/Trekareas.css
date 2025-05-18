@@ -1,0 +1,11 @@
+.Treklev input{
+    margin:20px;
+}
+.Treklev{
+    font-family: poppins;
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    border-radius:200px;
+    margin: 20px;
+}

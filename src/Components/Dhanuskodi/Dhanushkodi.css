@@ -1,0 +1,12 @@
+.backdhanush{
+    background-image: url('../../assest//Images//Dhanushkodi.webp');
+    height: 100dvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     margin: 50px auto;
+    text-align: center;
+}
+.dh{
+    color: white;
+}

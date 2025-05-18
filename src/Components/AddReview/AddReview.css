@@ -1,0 +1,56 @@
+.revdiv{
+    width:100%;
+    font-family: poppins;
+}
+.Hii{
+    background-color:rgb(238, 236, 236);
+}
+.revflex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 30%;
+}
+.revman {
+    background-image: url('../../assest/Images/reviii.avif');
+    height: 100dvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     margin: 50px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 70px;
+}
+.revman h1 {
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+.revman h2 {
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 420px) {
+    .revman {
+        width:90%;
+        height: auto;
+        background-size: 100%;
+        padding-bottom: 30px;
+    }
+    .revman h1 {
+        font-size: 1.5rem;
+        color:white;
+    }
+    .revman h2 {
+        font-size: 1rem;
+        color:black;
+    }
+}

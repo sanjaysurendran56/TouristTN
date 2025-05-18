@@ -10,7 +10,7 @@ import image5 from '../../assest/Images/Elephant.webp'
 import image7 from '../../assest/Images/fallsstn.jpg'
 import image10 from '../../assest/Images/Lakes.webp'
 import image12 from '../../assest/Images/Spritual.webp'
-import image13 from '../../assest/Images/Mahaballi.webp'
+import image20 from '../../assest/Images/kara.webp'
 const Toplaces = () => {
   const navi=useNavigate();
   const hill=()=>{
@@ -21,6 +21,15 @@ const Toplaces = () => {
   }
   const Waterfall=()=>{
     navi('/Topwaterfalls')
+  }
+  const lakes=()=>{
+    navi('/Toplakes')
+  }
+  const Spritual=()=>{
+    navi('/Topspiritual')
+  }
+  const Palaces=()=>{
+    navi('/Palaces');
   }
   return (
     <>
@@ -58,27 +67,27 @@ const Toplaces = () => {
                 </div>
               </div>
               <div className='carde'>
-                <img src={image12}></img>
-                <div className='contents'>
-                  <h1>Spritual</h1>
-                  <h1><FaLocationDot />10+Places</h1>
-                  <h1><Button className="buttonsbest" variant="warning">View Places<FaArrowRight /></Button></h1>
-                </div>
-              </div>
-              <div className='carde'>
                 <img src={image10}></img>
                 <div className='contents'>
                   <h1>Lakes</h1>
                   <h1><FaLocationDot />10+Places</h1>
-                  <h1><Button className="buttonsbest" variant="warning">View Places<FaArrowRight /></Button></h1>
+                  <h1><Button onClick={()=>lakes()}className="buttonsbest" variant="warning">View Places<FaArrowRight /></Button></h1>
                 </div>
               </div>
               <div className='carde'>
-                <img src={image13}></img>
+                <img src={image12}></img>
                 <div className='contents'>
-                  <h1>Heritage</h1>
+                  <h1>Spritual</h1>
                   <h1><FaLocationDot />10+Places</h1>
-                  <h1><Button className="buttonsbest" variant="warning">View Places<FaArrowRight /></Button></h1>
+                  <h1><Button onClick={()=>Spritual()}className="buttonsbest" variant="warning">View Places<FaArrowRight /></Button></h1>
+                </div>
+              </div>
+              <div className='carde'>
+                <img src={image20}></img>
+                <div className='contents'>
+                  <h1>Palaces</h1>
+                  <h1><FaLocationDot />10+Places</h1>
+                  <h1><Button onClick={()=>Palaces()}className="buttonsbest" variant="warning">View Places<FaArrowRight /></Button></h1>
                 </div>
               </div>
              </div>

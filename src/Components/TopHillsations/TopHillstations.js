@@ -15,23 +15,25 @@ import image10 from '../../assest/Images/yercaud.jpg';
 import { FaPersonWalkingArrowRight } from "react-icons/fa6";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from 'react-router';
 
 
 const TopHillstations = () => {
   const { inputComp } = useContext(MyContext);
   const{buttonComp}=useContext(MyContext);
+  const navi=useNavigate();
+
 
   const images = [
-    { srce: image01,name:"Ooty",about:"She is charming, she is classy, she is unique – she is the Queen of Hill Stations in India.Udhagamandalam, popularly known as Ooty is a hill station that will surely mesmerise you with its beguiling beauty."},
-    { srce: image2,name:"Pachamalai",about:"Amidst the verdant landscape of north-eastern Tamil Nadu lies a world of wonder and magic, where the green hills embrace the azure sky and the misty breeze carries with it a sense of freedom and tranquillity."},
-    { srce: image3,name:"Valparai",about:"This beautiful, hilly hamlet of Valparai is the ultimate choice for those who wish to spend a quiet memorable time away from all the hustle. The lavish green spread, tea plantations and winding paths serve up a lot to explore."},
-    { srce: image4,name:"Connor",about:"Seek out the beauty of nature at its very best at Coonoor, the second largest hill station in the Nilgiri hills. For trekkers and tourists, the place serves up a lot to explore. Blanketed by the green cover of Nilgiri hills, it packs an array of attractions."},
-    { srce: image5,name:"Kodaikanal",about:"Hills and valleys filled with the enigmatic hug of mist, lush mountain ranges that offer a warm welcome to visitors, enjoyment and experiences that proffer beautiful memories for a lifetime – Kodaikanal is a wonder in ways much more than one." },
-    { srce: image10,name:"Ercaud",about:"Nestled in the Shevaroys range of hills, Yercaud opens up a paradise of sights and things to explore. The origin of the place name sums up the main attractions; yeri means lake and forest means kaadu." },
-    { srce: image6,name:"Kollimalai",about:"Gifted with pleasant weather throughout the year, Kolli hills is one of those round the season destinations in Tamil Nadu. Unique in landscape and attractions, it has a scenic beauty and has plenty to offer for the exploring travellers."},
-    { srce: image7,name:"Kolukumalai",about:"Situated near Munnar is this world's highest tea plantation known as Kolukkumalai, a hamlet in Theni district in Tamil Nadu." },
-    { srce: image8,name:"Masinagdi",about:"Masinagudi whispers the wild's secrets through rustling leaves and roaming beasts.A hidden gem where nature breathes and the soul finds peace."},
-    { srce: image9,name:"Megamalai",about:"Marvel at the sky piercing mountains cloaked by clouds and carpeted by tea plantations at Meghamalai." }
+    { srce: image01,name:"Ooty",about:"She is charming, she is classy, she is unique – she is the Queen of Hill Stations in India.Udhagamandalam, popularly known as Ooty is a hill station that will surely mesmerise you with its beguiling beauty.",path:'/Ooty'},
+    { srce: image2,name:"Pachamalai",about:"Amidst the verdant landscape of north-eastern Tamil Nadu lies a world of wonder and magic, where the green hills embrace the azure sky and the misty breeze carries with it a sense of freedom and tranquillity.",path:'/Pachamalai'},
+    { srce: image3,name:"Valparai",about:"This beautiful, hilly hamlet of Valparai is the ultimate choice for those who wish to spend a quiet memorable time away from all the hustle. The lavish green spread, tea plantations and winding paths serve up a lot to explore.",path:'/valparai'},
+    { srce: image4,name:"Connor",about:"Seek out the beauty of nature at its very best at Coonoor, the second largest hill station in the Nilgiri hills. For trekkers and tourists, the place serves up a lot to explore. Blanketed by the green cover of Nilgiri hills, it packs an array of attractions.",path:'/Connor'},
+    { srce: image5,name:"Kodaikanal",about:"Hills and valleys filled with the enigmatic hug of mist, lush mountain ranges that offer a warm welcome to visitors, enjoyment and experiences that proffer beautiful memories for a lifetime – Kodaikanal is a wonder in ways much more than one.",path:'/kodai' },
+    { srce: image10,name:"Ercaud",about:"Nestled in the Shevaroys range of hills, Yercaud opens up a paradise of sights and things to explore. The origin of the place name sums up the main attractions; yeri means lake and forest means kaadu.",path:'/Ercaud'},
+    { srce: image6,name:"Kollimalai",about:"Gifted with pleasant weather throughout the year, Kolli hills is one of those round the season destinations in Tamil Nadu. Unique in landscape and attractions, it has a scenic beauty and has plenty to offer for the exploring travellers.",path:'/Kolli'},
+    { srce: image7,name:"Kolukumalai",about:"Situated near Munnar is this world's highest tea plantation known as Kolukkumalai, a hamlet in Theni district in Tamil Nadu.",path:'/koluku'},
+    { srce: image9,name:"Megamalai",about:"Marvel at the sky piercing mountains cloaked by clouds and carpeted by tea plantations at Meghamalai.",path:'/Megamalai'}
   ];
   return (
     <>
@@ -52,7 +54,7 @@ const TopHillstations = () => {
        <Card.Text>
         {item.about}
        </Card.Text>
-       <Button variant="warning">Read More</Button>
+       <Button variant="warning" onClick={()=>navi(item.path)}>Read More</Button>
      </Card.Body>
    </Card>
    </div>

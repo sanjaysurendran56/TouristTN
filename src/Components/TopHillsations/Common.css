@@ -1,0 +1,93 @@
+.ootback{
+    background-image: url("../../assest//Images//Ootyhill.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+.pachback{
+    background-image: url("../../assest//Images//Pachamalai.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+.valback{
+    background-image: url("../../assest//Images//valparai.webp");
+    height: 100dvh; 
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;            
+}
+.earback{
+    background-image: url("../../assest//Images//yercaud.jpg");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:black        
+}
+.kodaiback{
+    background-image: url("../../assest//Images//k2.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+.kolliback{
+    background-image: url("../../assest//Images//Kolli.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+.kolukuback{
+    background-image: url("../../assest//Images//koluku3.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+.megback{
+    background-image: url("../../assest//Images//Megamalai.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+
+@media(max-width:480px){
+    .ootback{
+        background-image: url('../../assest//Images//Ooty.webp');
+        height:200px;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .kodaiback,.kolliback,.kolukuback,.megback,.valback,.earback,.pachback{
+         height:200px;
+    }
+}

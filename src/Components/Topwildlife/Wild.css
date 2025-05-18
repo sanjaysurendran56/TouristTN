@@ -1,0 +1,45 @@
+.guindback{
+     background-image: url("../../assest//Images//guindypp.png");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:black;
+}
+.anaback{
+    background-image: url("../../assest//Images//Elephant.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:yellow;
+}
+.gulfback{
+    background-image: url("../../assest//Images//gulf2.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:black;
+}
+.mayback{
+    background-image: url("../../assest//Images//Maura.webp");
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     font-family: poppins;
+    font-weight: bold;
+    color:white;
+}
+@media(max-width:480px){
+    .guindback,.anaback,.gulfback,.mayback{
+         height:200px;
+    }
+}

@@ -8,81 +8,39 @@ import image3 from '../../assest/Images/virtaul3.jpg'
 import image4 from '../../assest/Images/virtaul4.jpg'
 import image5 from '../../assest/Images/virtual5.jpg'
 import { MdNotificationImportant } from "react-icons/md";
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Modal from 'react-bootstrap/Modal';
-import Row from 'react-bootstrap/Row';
-
-function MydModalWithGrid(props) {
-  return (
-    <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Login
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body className="grid-example">
-        <Container>
-          <Row>
-            <center>
-            <Col>
-              <input className="namelog" type="text" placeholder='Name'></input>
-            </Col>
-            </center>
-            </Row>
-            <br></br>
-            <Row>
-            <center>
-            <Col>
-              <input className="namelog" type="text" placeholder='Mail'></input>
-            </Col>
-            </center>
-            </Row>
-            <br></br>
-            <Row>
-            <center>
-            <Col>
-              <input className="namelog" type="text" placeholder='Are you from'></input>
-            </Col>
-            </center>
-          </Row>
-        </Container>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
-
+import { useNavigate } from 'react-router';
+import { Mycontext2 } from '../../App';
 const Virtual = () => {
   const { inputComp } = useContext(MyContext);
-  const [modalShow, setModalShow] = useState(false);
-
+  const{logins}=useContext(Mycontext2);
   const images = [
-    { srce: image1, name: "THANJAVUR - BIG TEMPLE Virtual Tour" },
+    { srce: image1, name: "THANJAVUR - BIG TEMPLE Virtual Tour"},
     { srce: image2, name: "MAMALLAPURAM Virtual Tour" },
     { srce: image3, name: "AIRAVATESWARA TEMPLE Virtual Tour" },
     { srce: image4, name: "GANGAIKONDA CHOLAPURAM Virtual Tour" },
     { srce: image5, name: "NILGIRI MOUNTAIN RAILWAY Virtual Tour" },
   ];
-
+  const navi=useNavigate();
+  const log=()=>{
+    navi('/Signup');
+  }
   return (
     <>
       {inputComp}
-      <div style={{ maxWidth: '400px', margin: '0 auto' }}>
+      <center>
+        <h1>UNESCO</h1>
+      </center>
+      {logins?<></>:
+      <div style={{ maxWidth: '400px', margin: '0 auto'}}>
         <Alert variant="danger">
           Please! Login to see the places in your Home! Click here to{' '}
-          <Alert.Link href="#" onClick={() => {setModalShow(true); }}>
+          <Alert.Link href="#" onClick={() =>log()}>
             Login
           </Alert.Link>
         </Alert>
       </div>
-
-      <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
-
-      <div className='parent'>
+}
+<div className="parent" style={logins? { filter: "blur(0px)" } : {}}>
         {images.map((vir, idx) => (
           <div className='child' key={idx}>
             <img src={vir.srce} alt={vir.name} />
@@ -93,6 +51,17 @@ const Virtual = () => {
           </div>
         ))}
       </div>
+      <div className='link-section' style={logins? { filter: "blur(0px)" } : {filter: "blur(2px)"}}>
+  <h2 style={{ textAlign: "center", marginTop: "30px" }}>Explore Virtual Tours:</h2>
+  <div className='link-container'>
+    <a href='https://www.tamilnadutourism.tn.gov.in/virtualtour-pkg/thanjavur/index.html' target='_blank' rel='noopener noreferrer'>Thanjai Periya Kovil</a>
+    <a href='https://www.tamilnadutourism.tn.gov.in/virtualtour-pkg/mamallapuram/index.html' target='_blank' rel='noopener noreferrer'>Mahabalipuram</a>
+    <a href='https://www.tamilnadutourism.tn.gov.in/virtualtour-pkg/darasuram/index.html' target='_blank' rel='noopener noreferrer'>Darasuram</a>
+    <a href='https://www.tamilnadutourism.tn.gov.in/virtualtour-pkg/gangaikondacholapuram/index.html' target='_blank' rel='noopener noreferrer'>Gangaikondacholapuram</a>
+    <a href='https://www.tamilnadutourism.tn.gov.in/virtualtour-pkg/nilgirimountainailway/index.html' target='_blank' rel='noopener noreferrer'>Nilgiri Mountain Railway</a>
+  </div>
+</div>
+
     </>
   );
 };

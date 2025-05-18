@@ -30,6 +30,15 @@ const Navsi = () => {
   const marina=()=>{
     navi('/Marina')
   }
+  const addrev=()=>{
+    navi('/Review')
+  }
+  const Dhanush=()=>{
+    navi('/Dhanuskodi')
+  }
+  const Toy=()=>{
+    navi('/ToyTrain')
+  }
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary mb-3" id="top">
@@ -50,14 +59,12 @@ const Navsi = () => {
               <Nav className="justify-content-end flex-grow-1 pe-5" id='ones'>
                 <li  onClick={() => upadteline("Home")} className={line === "Home" ? "navact" : ""}>Home</li>
                 <br></br>
-                <li  onClick={() => upadteline("Destination")} className={line === "Destination" ? "navact" : ""}>Destination</li>
-                <br></br>
+                
                 <li  onClick={() => {upadteline("About Us");vir();}}
  className={line === "About Us" ? "navact" : ""}>Virtual Tour</li>
                 <br></br>
-                <li  onClick={() => upadteline("Virtual")} className={line === "Virtual" ? "navact" : ""}>Add Review</li>
+                <li  onClick={() => {upadteline("Virtual");addrev()}} className={line === "Virtual" ? "navact" : ""}>Add Review</li>
                 <br></br>
-                <li  onClick={() => upadteline("Contact")} className={line === "Contact" ? "navact" : ""}>Get Weather</li>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
@@ -138,7 +145,7 @@ const Navsi = () => {
         <center>
           <h1>Visit the last road of India at Dhanushkodi.</h1>
           <h2>Explore the serene beaches and rich history of this mystical ghost town at the edge of the Indian subcontinent.</h2>
-          <Button className="butt" variant="warning">Explore More<FaArrowRight /></Button>
+          <Button className="butt" variant="warning" onClick={()=>Dhanush()}>Explore More<FaArrowRight /></Button>
           </center>
           </div>
         </Carousel.Caption>
@@ -154,7 +161,7 @@ const Navsi = () => {
         <center>
           <h1>Ride the iconic Ooty Toy Train through the Nilgiri Hills.</h1>
           <h2>Experience the charm of a scenic journey through lush forests, misty mountains, and picturesque landscapes on this UNESCO-listed heritage train.</h2>
-          <Button className="butt" variant="warning">Explore More<FaArrowRight /></Button>
+          <Button className="butt" variant="warning" onClick={()=>Toy()}>Explore More<FaArrowRight /></Button>
           </center>
           </div>
         </Carousel.Caption>

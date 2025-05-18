@@ -1,0 +1,15 @@
+.toy{
+    background-image: url('../../assest//Images/Toytrain.webp');
+    height: 100dvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;   
+}
+@media(max-width:420px){
+    .toy{
+        margin: 20px;
+        height: 400px;
+        width: 90%;
+        background-position:center;   
+    }
+}

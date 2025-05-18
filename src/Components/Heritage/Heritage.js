@@ -4,6 +4,10 @@ import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from 'react-router';
 import './Heritage.css'
 const Heritage = () => {
+  const navi=useNavigate();
+  const uncesco=()=>{
+    navi('/virtual')
+  }
   return (
     <div>
       <br></br>
@@ -16,7 +20,7 @@ const Heritage = () => {
           </div>
           <div className="s2">
             <h2>Tamil Nadu, the cultural capital of India, boasts of five UNESCO World Heritage Sites which you should not miss</h2>
-            <Button className="butt" variant="warning">Explore More<FaArrowRight /></Button>
+            <Button className="butt" variant="warning" onClick={()=>uncesco()}>Explore More<FaArrowRight /></Button>
           </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import { CiClock2 } from "react-icons/ci";
 import { MyContext } from "../Context/Context";
 import { useContext } from 'react';
 import Userreview from '../Userreview/Userreview';
+import './Marna.css'
 const Marina = () => {
     const[a,b]=useState(true);
       const[vehitime,update]=useState(true);
@@ -15,22 +16,22 @@ const Marina = () => {
   return (
     <>
 {inputComp}
-<div className="backkanya">
+<div className="backmarina">
   <center>
-    <h1>KanyaKumari</h1>
+    <h1>Marina Beach</h1>
   </center>
 </div>
  <div className="parakanya">
  <div className="aboutk">
-<p>Kanniyakumari is a special destination in many different ways. It is the southernmost tip of the mainland of India. Three major water bodies – the Arabian Sea, Bay of Bengal and the Indian Ocean – converge right here in Kanniyakumari. Such a geographically blessed destination is rare and these features make Kanniyakumari  one of the most visited places in India annually. 
+<p>There are certain attractions that define a city in many unique ways; reflecting the essence, the character and the very soul of that destination. That is what Marina Beach is to Chennai – the city’s heart that reflects everything that is best about the city. 
 </p>
 <br></br>
-<p>The place gets its name from the Hindu goddess Devi Kanniyakumari, who is considered to be the sister of Lord Krishna. When the Dutch East India Company conquered Portuguese Ceylon from the Portuguese East Indies, the name Kanniyakumari was shortened to Comorin. Eventually during the British regime in India, the destination began to be called Cape Comorin. Later, the Government of India renamed it as Kanniyakumari. </p>
+<p>It’s a landmark that Chennai has been proudly showcasing before the world – the Marina Beach. A splendidly serene strip of coast along the Bay of Bengal, the Marina Beach is considered to be one of the finest beaches in India. No wonder the spot attracts thousands of visitors everyday from all parts of the world. The first choice of local people when it comes to spending a beautiful evening, Marina Beach is one of the largest urban beaches in the world. </p>
     <br></br>
-    <p>What Kanniyakumari offers to a passionate traveller are many spectacular joys. Of course being a coastal region Kanniyakumari has great beaches that are perfect to spend vacations at. Then there are spectacular monuments that remind you about the rich cultural heritage that Kanniyakumari has to offer. Then comes various temples, churches, waterfalls – all adding up to the stunning experiences that make Kanniyakumari a must-explore destination. Kanniyakumari is the only spot in India from where you can watch the spectacle of the sunset and the moonrise happening simultaneously on Full Moon days. It’s even grander during the day of ‘Chithra Pournami’ when the Sun and the Moon will appear facing each other in the same horizon.  
+    <p>Stretching across 13 kms from Fort St. George to the northern part of Besant Nagar, this beach was nothing but a stretch of mud before the construction of the Madras Port. The same was modified to form a promenade and was named the Madras Marina by the British. During the Indian freedom struggle, the Marina Beach was a centre for social gatherings and public events. With the passage of time, Marina Beach transformed itself into a locale of leisure and entertainment. It is estimated that over 30,000 people visit the beach everyday, making the entire 13 km stretch buzzing with life.
     </p>
     <br></br>
-    <p>Two popular attractions of the region are the Vivekananda Rock Memorial and the Statue of Thiruvalluvar located side by side in the sea.
+    <p>The views of the sea, the sand and the sunrise are ones to enjoy from Marina Beach. Though a popular beach destination, Marina beach isn’t considered safe to swim or host water sports due to the turbulent undercurrent. However, taking a stroll on the beach itself is an experience like few others. A 50 m high lighthouse on the beach offers a spectacular view of the city and surroundings.
 </p>
     </div>
     </div>
@@ -45,30 +46,24 @@ const Marina = () => {
     {vehitime?<div className="Travel">
         <div>
           <center><FaBus className="icon" />
-        <p>Buses ply from major cities like Thiruvananthapuram, Madurai, Coimbatore, Puducherry and Chennai to Kanyakumari Bus Stand, Puthugramam.
-        Vadasery Bus Stand, Nagercoil, about 21 km away.</p></center>
+        <p>Chennai Bus Stand, about 13 km away
+
+</p></center>
         </div>
         <div> <center><FaTrainSubway className="icon" />
-        <p>Kanyakumari Railway Station.
-        Nagercoil Junction Railway Station, 17 km away.</p></center></div>
+        <p>Chennai Central Station, about 4 km away</p></center></div>
         <div> <center><MdFlight className="icon" />
-        <p>The nearest International airport is Thiruvananthapuram International Airport which is 76 km from Kanyakumari.
-        Madurai International Airport, about 240 km away.</p></center></div>
+        <p>Chennai International Airport, about 18.9 km away</p></center></div>
       </div>:<>
         </>}
          {vehitime?<>
       </>:<div className="Travel">
         <div>
         <center><CiClock2 className="icon" />
-      <p>The perfect time to experience Kanyakumari is from November to March as the weather would be cool and pleasant. Summers can be really hot as the destination has a tropical climate.</p>
+      <p>The perfect time to experience Marina is from October to February as the weather would be cool and pleasant. Summers can be really hot as the destination has a tropical climate.</p>
       </center></div>
         </div>}
-         <center>
-              <div className='defaultreview'>
-              <h4>What people Think About <span>KanyaKumari</span></h4>
-              </div>
-              </center>
-        <Userreview />
+         
         <div>
           {buttonComp}
         </div>
